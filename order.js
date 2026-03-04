@@ -1,9 +1,9 @@
 function calculateDeliveryFee(order) {
-  let fee = 30;
+  let fee = 40;
   if (order.distance > 5) {
-    fee = 50;
+    fee = 70;
   }
-  if (order.totalAmount > 500) {
+  if (order.totalAmount > 300) {
     fee = 0;
   }
   return fee;
